@@ -1,0 +1,66 @@
+
+body{
+    margin: 0;
+    padding: 30px 16px;
+    background-color: #B7E4C7;
+    font-family: 'Outfit', sans-serif;
+}
+#maximo{
+    max-width: 620px;
+    margin: 0 auto;
+    background-color: #F5F3E8;
+    padding: 28px;
+    border-radius: 20px;
+    box-shadow: 0 12px 28px rgba(31, 45, 46, 0.18);
+
+}
+.recuadro{
+    background-color: #F5F3E8;
+    display: block;
+    margin: 10px;
+    padding: 5px;
+    border: solid 1px #6d6d6d;
+    border-radius: 10px;
+
+}
+.gravedad{
+    flex: 1;
+    text-align: center;
+    background-color: #B7E4C7;
+    border: solid 1px #2E7D32;
+    border-radius: 10px;
+}
+.gravedad p{
+    margin: 10px;
+    font-weight: 700;
+}
+.gravedad-opciones{
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+}
+.acciones {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.volver,
+.enviar {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.volver {
+    background-color: #1557A6;
+    border: solid 1px #0D3B73;
+    color: white;
+}
+.enviar {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Daños - Ecoloop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="maximo">
+    <h1>Reportar un daño</h1>
+    <p>Aquí podrás enviar tu reporte sobre algún problema en el colegio.</p>
+    <form action="../verificacion/verificacion.html">
+        <label for="nombre">Nombre del estudiante:</label>
+        <input type="text" id="nombre" class="recuadro" name="nombre" required>
+        <label for="grado">Grado:</label>
+        <select id="grado" class="recuadro" name="grado" required>
+            <option value="">Selecciona tu grado</option>
+            <option value="6">6°</option>
+            <option value="7">7°</option>
+            <option value="8">8°</option>
+            <option value="9">9°</option>
+            <option value="10">10°</option>
+            <option value="11">11°</option>
+        </select>
+        <label for="tipo" required>Tipo de daño:</label>
+        <input type="text" id="tipo" class="recuadro" name="tipo" required>
+        <label for="descripcion">Descripción:</label>
+        <input type="text" id="descripcion" class="recuadro" name="descripcion" placeholder="opcional">
+        <label for="ubicacion">Ubicación:</label>
+        <input type="text" id="ubicacion" class="recuadro" name="ubicacion" required placeholder="ej.coodinacion segundo piso">
+        <h2>gravedad del daño</h2>
+        <div class="gravedad-opciones">
+            <div class="gravedad">
+                <p >Bajo</p>
+            </div>
+            <div class="gravedad" style="background-color:  #ffe674;  border: solid 1px  #ffa600;">
+                <p>Medio</p>
+            </div>
+            <div class="gravedad" style="background-color:  #d16565; border: solid 1px  #ff0000;">
+                <p>Alto</p>
+            </div>
+        </div>
+            <div class="acciones">
+                <a href="../inicio/inicio.html" class="volver">Volver al inicio</a>
+                <button type="submit" class="enviar">Enviar reporte</button>
+            </div>
+        </form>
+            </div>
+</body>
+</html>
