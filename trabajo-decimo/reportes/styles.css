@@ -68,7 +68,7 @@ h2 {
     border-radius: 50%;
     position:relative;
     bottom: 400px;
-    left: 560px;
+    left: 760px;
 }
 
 .en-proceso{
@@ -79,7 +79,7 @@ h2 {
     border-radius: 50%;
     position:relative;
     bottom: 285px;
-    left: 560px;
+    left: 760px;
 }
 
 .pendiente{
@@ -90,7 +90,7 @@ h2 {
     border-radius: 50%;
     position:relative;
     bottom: 170px;
-    left: 560px;
+    left: 760px;
 }
 
 .volver{
