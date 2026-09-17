@@ -3,29 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Registro - Ecoloop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="registro-container">
-        <h1>Bienvenido A Ecoloop</h1>
-        <p>Una escuela sostenible</p>
 
+    <div class="login-container">
+
+    <h1>Bienvenido A Ecoloop</h1>
+    <p>Una escuela sostenible</p>
+
+    <div class="registro-datos">
         <form action="../login/login.html">
-            <label for="usuario">Nombre de Usuario</label>
-            <input type="text" id="usuario" required placeholder="Nombre de Usuario" name="Usuario">
 
-            <label for="correo">correo electronico</label>
-            <input type="email" id="correo" required placeholder="Correo electrónico" name="Correo">
+            <label for="usuario">Nombre de Usuario*</label>
+            <input type="text" id="usuario" name="Usuario" placeholder="Nombre de Usuario" required>
+
+            <label for="correo">Correo electrónico*</label>
+            <input type="email" id="correo" name="Correo" placeholder="Correo electrónico" required>
 
             <label for="contraseña">Contraseña</label>
-            <input type="password" id="contraseña" required placeholder="Contraseña" name="Contraseña">
+            <input type="password" id="contraseña" name="Contraseña" placeholder="Contraseña" required>
 
-            <button type="submit">Ingresar</button>
+            <button type="submit">Registrarse</button>
+
         </form>
     </div>
+</div>
 </body>
 </html>
