@@ -14,9 +14,9 @@
     <h1>Reportar un daño</h1>
     <p>Aquí podrás enviar tu reporte sobre algún problema en el colegio.</p>
     <form action="../verificacion/verificacion.html">
-        <label for="nombre">Nombre del estudiante:</label>
-        <input type="text" id="nombre" class="recuadro" name="nombre" required>
-        <label for="grado">Grado:</label>
+        <label for="nombre">Nombre del estudiante*:</label>
+        <input type="text" id="nombre" class="recuadro" name="nombre" placeholder="Ingresa tu nombre" required>
+        <label for="grado">Grado*:</label>
         <select id="grado" class="recuadro" name="grado" required>
             <option value="">Selecciona tu grado</option>
             <option value="6">6°</option>
@@ -26,11 +26,19 @@
             <option value="10">10°</option>
             <option value="11">11°</option>
         </select>
-        <label for="tipo" required>Tipo de daño:</label>
-        <input type="text" id="tipo" class="recuadro" name="tipo" required>
+        <label for="tipo" required>Tipo de daño*:</label>
+        <select id="tipo" class="recuadro" name="tipo de daño" required>
+            <option value="">Seleccione el tipo de daño</option>
+            <option value="baño">baño</option>
+            <option value="infraestructura">infraestructura</option>
+            <option value="cable">cables sueltos</option>
+            <option value="computadores">computadores</option>
+            <option value="sillas">sillas</option>
+            <option value="otros">otros</option>
+        </select>
         <label for="descripcion">Descripción:</label>
         <input type="text" id="descripcion" class="recuadro" name="descripcion" placeholder="opcional">
-        <label for="ubicacion">Ubicación:</label>
+        <label for="ubicacion">Ubicación*:</label>
         <input type="text" id="ubicacion" class="recuadro" name="ubicacion" required placeholder="ej.coodinacion segundo piso">
         <h2>gravedad del daño</h2>
         <div class="gravedad-opciones">
