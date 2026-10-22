@@ -41,6 +41,13 @@ input {
     font-family: 'Poppins', sans-serif;
 }
 
+select{
+    border-radius: 15px;
+    padding: 12px;
+    border: 1px solid #cfcfcf;
+    font-family: 'Poppins', sans-serif;
+}
+
 button {
     background: #4CAF50;
     color: white;
