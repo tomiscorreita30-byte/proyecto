@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main class="login">
+
+    <header class="encabezado">
+        <div class="icono">🧑🏻</div>
+        <h1>Alumno</h1>
+        <p>Inicia sesión para acceder al panel
+        de gestión institucional</p>
+    </header>
+
+    <form class="formulario" action="../login/login.html" method="post">
+
+        <div class="campo">
+            <label for="usuario">👤 Usuario</label>
+            <input type="text" id="usuario"
+            name="usuario" placeholder="👤 Usuario" autocomplete="username" required>
+        </div>
+
+        <div class="campo">
+            <label for="correo">📧 Correo electrónico</label>
+            <input type="email" id="correo"
+            name="correo" placeholder="📧 Correo electrónico" autocomplete="email" required>
+        </div>
+
+        <div class="campo">
+            <label for="contraseña">🔒Contraseña</label>
+            <input type="password" id="contraseña" name="contraseña" placeholder="🔒Contraseña" autocomplete="current-password" required>
+        </div>
+
+        <div class="opciones">
+            <label class="recordar">
+                <input type="checkbox" name="recordar">
+                Recordar sesión
+            </label>
+
+            <a href="#" class="recuperar">
+                ¿Olvidaste tu contraseña?
+            </a>
+        </div>
+
+        <button type="submit">Ingresar →</button>
+
+</body>
+</html>
