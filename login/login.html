@@ -1,28 +1,41 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecoloop</title>
+    <title>Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="login-container">
-        <h1>Ecoloop</h1>
-        <p>Una escuela sostenible</p>
-
     
-        <form action="../inicio/inicio.html">
-            <label for="usuario">Nombre de usuario*</label>
-            <input type="text" id="usuario" required placeholder="Nombre de usuario" name="Usuario">
+    <main class="login">
 
-            <label for="contraseña">Ingrese su contraseña*</label>
-            <input type="password" id="contraseña" required placeholder="Contraseña" name="Contraseña">
+    <header class="encabezado">
+        <div class="icono">🧑🏻</div>
+        <h1>Alumno</h1>
+        <p>Inicia sesión para acceder al panel
+        de gestión institucional</p>
+    </header>
 
-            <label for="grado">grado*</label>
+    <form class="formulario" action="../inicio/inicio.html" method="post">
+
+        <div class="campo">
+            <label for="usuario">👤 Usuario</label>
+            <input type="text" id="usuario"
+            name="usuario" placeholder="👤 Usuario" autocomplete="username" required>
+        </div>
+
+        </div>
+
+        <div class="campo">
+            <label for="contraseña">🔒Contraseña</label>
+            <input type="password" id="contraseña" name="contraseña" placeholder="🔒Contraseña" autocomplete="current-password" required>
+        </div>
+
+           <label for="grado">grado*</label>
             <select id="grado" name="Grado" required>
                 <option value="">Seleccione su grado</option>
                 <option value="6">6°</option>
@@ -33,8 +46,18 @@
                 <option value="11">11°</option>
             </select>
 
-            <button type="submit">Ingresar</button>
-        </form>
-    </div>
+        <div class="opciones">
+            <label class="recordar">
+                <input type="checkbox" name="recordar">
+                Recordar sesión
+            </label>
+
+            <a href="#" class="recuperar">
+                ¿Olvidaste tu contraseña?
+            </a>
+        </div>
+
+        <button type="submit">Ingresar →</button>
+
 </body>
 </html>
